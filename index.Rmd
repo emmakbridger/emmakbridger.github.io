@@ -9,9 +9,9 @@ knitr::include_graphics("images/DJR01030_rsc.jpg")
 
 Hello! I am a Senior Research Fellow in [Psychology](https://www.bcu.ac.uk/social-sciences/about-us/staff/psychology), at [Birmingham City University](https://www.bcu.ac.uk/). My background is in experimental psychology and memory although my research interests now cover a very broad range of behavioural science topics. 
 
-Many of my current interests lie at the intersection between well-being, health, socioeconomic inequality and social psychology. I am particularly interested in how, or even whether, behavioural science can usefully contribute to academic study of socioeconomic health inequality, beyond describing the psychosocial pathways between the material world and the body (although I think this is valuable too). 
+Many of my current interests lie at the intersection between well-being, health, socioeconomic inequality and social psychology. I am particularly interested in thinking about new ways in which behavioural science can contribute to academic study of inequality and social issues. 
 
-But that's not all I'm up to - I spend a lot of time thinking about how to both teach and apply ethics and open science principles, for example. Do have a look around to see more, check out research activities and pre-registrations at [osf.io/gmz9h](osf.io/gmz9h) or get in touch with me directly at emma[dot]bridger[at]bcu[dot]ac[dot]uk.
+But that's not all I'm up to - I spend a lot of time thinking about how to both teach and apply ethics and open science principles. Do have a look around to see more, check out research activities and pre-registrations at [osf.io/gmz9h](osf.io/gmz9h) or get in touch with me directly at emma[dot]bridger[at]bcu[dot]ac[dot]uk.
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
