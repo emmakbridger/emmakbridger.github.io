@@ -1,7 +1,22 @@
----
-title: "Research"
----
+Some of my current research projects include:
 
+*A new approach to documenting public opinion of health inequalities in the United Kingdom and United States* 
 
-Here is some more information about moi.
-Just checking this is updating.
+This project is funded by a BA/Leverhulme Small Research grant. It began in December 2020 and employs a number of different methods to capture views of the UK and US public on health inequality. Part of this includes the use of a novel objective and easy-to-interpret measure of the public's perceived and desired levels of health inequality. Access more information and existing data [here]().
+
+*Perceptions of universal basic income as a population mental health intervention*
+
+This project is aligned to my broader interests in public intuitions and attributions about macro-social and population level interventions. Accepted pre-print is accessible [here](), as well as corresponding data and syntax [here]().
+
+*Testing the social cognitive model of gratitude and pay for essential workers*
+
+This project tests whether a model of state and trait gratitude can be used to predict responses towards essential workers during the Covid-19 pandemic, in particular, how much they should be paid.
+Access the pre-registration for this project [here](), as well as corresponding data and syntax [here]().
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+#### Previous Funded Research Projects
+
+Attention during risky decision-making: Insights from eye movements and neural modelling
+_British Academy/Leverhulme Small Research Grant_

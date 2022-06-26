@@ -3,13 +3,17 @@ navbar:
   title: "Emma Bridger"
   type: default
   left:
-    - text: "Home"
+    - text: "home"
       href: index.html
-    - text: "Research"
+    - text: "bio"
+      href: bio.html
+    - text: "publications"
+      href: publications.html
+    - text: "research projects"
       href: research.html
-    - text: "Teaching"
+    - text: "teaching + misc"
       href: teaching.html
 output_dir: "docs" 
 output:
   html_document:
-    theme: darkly
+    theme: sandstone

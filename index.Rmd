@@ -1,12 +1,22 @@
 ---
-title: "Emma Bridger"
+title: " "
 ---
+<div style= "float:right;position: relative; left: 30px; top: -7px;">
+```{r echo=FALSE, fig.align='right'}
+knitr::include_graphics("images/DJR01030_rsc.jpg") 
+```
+</div>
 
+Hello! I am a Senior Research Fellow in [Psychology](https://www.bcu.ac.uk/social-sciences/about-us/staff/psychology), at [Birmingham City University](https://www.bcu.ac.uk/). My background is in experimental psychology and memory although my research interests now cover a very broad range of behavioural science topics. 
 
-I am a Senior Research Fellow in Psychology 
+Many of my current interests lie at the intersection between well-being, health, socioeconomic inequality and social psychology. I am particularly interested in how, or even whether, behavioural science can usefully contribute to academic study of socioeconomic health inequality, beyond describing the psychosocial pathways between the material world and the body (although I think this is valuable too). 
 
-I work at Birmingham City University 
-[Department of Psychology](https://www.bcu.ac.uk/social-sciences/about-us/staff/psychology) and
-Research Centre for Lifespan and Behavioural Science.
+But that's not all I'm up to - I spend a lot of time thinking about how to both teach and apply ethics and open science principles, for example. Do have a look around to see more, check out research activities and pre-registrations at [osf.io/gmz9h](osf.io/gmz9h) or get in touch with me directly at emma[dot]bridger[at]bcu[dot]ac[dot]uk.
 
-More to be added later.
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+This page was inspired and supported by [Freya Watkins](https://freyawatkins.github.io/) and created using RStudio and GitHub following a webpage and Rmarkdown [tutorial](https://debruine.github.io/tutorials/webpages.html) by [Lisa DeBruine](https://debruine.github.io/). 
