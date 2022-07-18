@@ -7,6 +7,8 @@ knitr::include_graphics("images/DJR01030_rsc.jpg")
 ```
 </div>
 
+Adding text to be removed
+
 Hello! I am a Senior Research Fellow in [Psychology](https://www.bcu.ac.uk/social-sciences/about-us/staff/psychology), at [Birmingham City University](https://www.bcu.ac.uk/). My background is in experimental psychology and memory although my research interests now cover a very broad range of behavioural science topics. 
 
 Many of my current interests lie at the intersection between well-being, health, socioeconomic inequality and social psychology. I am particularly interested in thinking about new ways in which behavioural science can contribute to academic study of inequality and social issues. 
