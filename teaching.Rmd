@@ -1,9 +1,8 @@
 ---
-title: "Teaching"
+title: "Teaching + Other Activities"
 ---
-
-Adding text to be removed
-
+<p>&nbsp;</p>
+  
 *What else am I up to?*
 
 I have a lot of fun teaching Quantitative Research Methods on the [MSc Psychology online conversion course](https://www.bcu.ac.uk/courses/psychology-msc-2021-22) where we pack the fundamentals of quantitative methods into a single semester! I also teach on psychology modules across levels 4-7 including Contemporary Issues in Psychology, Brain and Cognition, Advanced Research Methods. I have been very involved in organising, chairing and reviewing undergraduate, postgraduate, PhD and staff project ethics applications for the past 6 years. 

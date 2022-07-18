@@ -1,8 +1,7 @@
 ---
 title: "Research Projects"
 ---
-
-Adding text to be removed
+<p>&nbsp;</p>
 
 Some of my current research projects include:
 
