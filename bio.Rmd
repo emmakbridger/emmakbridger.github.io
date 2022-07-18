@@ -1,6 +1,8 @@
 ---
 title: "Biography"
 ---
+
+<p>&nbsp;</p>
   
   
 My academic trajectory is a bit unconventional. Over the past 15 years I have transitioned from a researcher in neuroscience of memory to a broader behavioural scientist.
