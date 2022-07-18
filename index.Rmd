@@ -1,5 +1,5 @@
 ---
-title: " "
+title: "Emma Bridger"
 ---
 <div style= "float:right;position: relative; left: 30px; top: -7px;">
 ```{r echo=FALSE, fig.align='right'}
