@@ -13,7 +13,7 @@
 
 <title>Research Projects</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -141,11 +141,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -174,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -183,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -283,10 +280,6 @@ $(document).ready(function () {
 <p>Some of my current research projects include:</p>
 <p><em>A new approach to documenting public opinion of health inequalities in the United Kingdom and United States</em></p>
 <p>This project is funded by a BA/Leverhulme Small Research grant. It began in December 2020 and employs a number of different methods to capture views of the UK and US public on health inequality. Part of this includes the use of a novel objective and easy-to-interpret measure of the public’s perceived and desired levels of health inequality. Access the pre-print from the first part of the project <a href="https://www.preprints.org/manuscript/202206.0215/v1">here</a>.</p>
-<p><em>Perceptions of universal basic income as a population mental health intervention</em></p>
-<p>This project is aligned to my broader interests in public intuitions and attributions about macro-social and population level interventions. Accepted pre-print is accessible <a href="https://psyarxiv.com/w6ae8">here</a>.</p>
-<p><em>Testing the social cognitive model of gratitude and pay for essential workers</em></p>
-<p>This project tests whether a model of state and trait gratitude can be used to predict responses towards essential workers during the Covid-19 pandemic, in particular, how much they should be paid. Access the pre-registration for this project <a href="https://osf.io/5fk4x">here</a>.</p>
 <p>
  
 </p>

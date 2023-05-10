@@ -13,7 +13,7 @@
 
 <title>Biography</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -141,11 +141,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -174,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -183,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -283,7 +280,8 @@ $(document).ready(function () {
 <p>My academic trajectory is a bit unconventional. Over the past 15 years I have transitioned from a researcher in neuroscience of memory to a broader behavioural scientist.</p>
 <p>I completed my undergraduate BSc in Psychology at Cardiff University in 2006, where I went onto undertake my doctoral thesis on <em>Electrophysiological Correlates of Individual Differences in Strategic Retrieval Processing</em> supervised by <a href="https://www.birmingham.ac.uk/staff/profiles/psychology/wilding-edward.aspx">Professor Ed Wilding</a>.</p>
 <p>From 2010-2014, I worked as scientific researcher (Wissenschaftlicher Mitarbeiterin) and lecturer at the Universitaet des Saarlandes Experimentelle Neuropsychologie Unit, with <a href="http://www.neuro.psychologie.uni-saarland.de/pages/staff/staff_lebenslauf/mecklinger.html">Professor Dr Axel Mecklinger</a>.</p>
-<p>In 2014, I completed an MSc in Behavioural Sciences at the University of Stirling Management School. I have worked as a Research Fellow at Birmingham City University in the Department of Psychology since August 2015, where I am a member of the School of Social Sciences <a href="https://www.bcu.ac.uk/social-sciences/research/lifespan-and-behavioural-science#:~:text=Investigating%20and%20developing%20understanding%20of,emotional%20development%20throughout%20the%20lifespan.">Research Centre for Lifespan and Behavioural Science</a>.</p>
+<p>In 2014, I completed an MSc in Behavioural Sciences at the University of Stirling Management School. I worked as a Research Fellow at Birmingham City University in the Department of Psychology from 2015-2023.</p>
+<p>In 2023, I joined the University of Leicester as a Lecturer in Psychology.</p>
 
 
 

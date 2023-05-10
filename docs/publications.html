@@ -13,7 +13,7 @@
 
 <title>Peer-reviewed Publications</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -141,11 +141,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -174,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -183,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -280,7 +277,8 @@ $(document).ready(function () {
 <p>
  
 </p>
-<p><strong>Bridger, E.</strong> &amp; Lally, H. (2022). Rewarding valuable services and altruistic motives: Gratitude and pay for essential workers during the Covid-19 pandemic. <em>Journal of Social Psychology</em></p>
+<p><strong>Bridger, E. K.</strong>, Tufte-Hewett, A. &amp; Comerford, D. (2023). Dispositional and situational attributions for why the rich live longer than the poor. <em>Journal of Applied Social Psychology</em> <a href="https://doi.org/10.1111/jasp.12955" class="uri">https://doi.org/10.1111/jasp.12955</a></p>
+<p><strong>Bridger, E.</strong> &amp; Lally, H. (2022). Rewarding valuable services and altruistic motives: Gratitude and pay for essential workers /during the Covid-19 pandemic. <em>Journal of Social Psychology</em> <a href="https://doi.org/10.1080/00224545.2022.2144708" class="uri">https://doi.org/10.1080/00224545.2022.2144708</a></p>
 <p><strong>Bridger, E. K.</strong> &amp; Nettle, D. (2022). <a href="http://www.open-access.bcu.ac.uk/id/eprint/13262">Public perceptions of the effectiveness of income provision on reducing psychological distress</a>. <em>Journal of Public Mental Health, 21</em>(3), 208-217. <a href="https://doi.org/10/1108/JPMH-04-2022-0036" class="uri">https://doi.org/10/1108/JPMH-04-2022-0036</a>.</p>
 <p>Aldrovandi, S., <strong>Bridger, E. K.</strong>, Knowles, D. &amp; Poirier, M. (2022). <a href="http://www.open-access.bcu.ac.uk/id/eprint/13293">Retrospective and prospective evaluations of mammograph screening narratives: The role of own experience</a>. <em>Experimental Psychology</em>.</p>
 <p><strong>Bridger, E. K.</strong> &amp; Daly, M. (2020). <a href="http://www.open-access.bcu.ac.uk/9522/">Intergenerational social mobility predicts midlfe well-being: Prospective evidence from two large British Cohorts</a>. <em>Social Science &amp; Medicine, 261</em>, 113217 DOI: 10.1016/j.socscimed.2020.113217.</p>

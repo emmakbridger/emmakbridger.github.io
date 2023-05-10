@@ -13,7 +13,7 @@
 
 <title>Emma Bridger</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -141,11 +141,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -174,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -183,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -278,14 +275,14 @@ $(document).ready(function () {
 
 
 <div style="float:right;position: relative; left: 30px; top: -7px;">
-<p><img src="images/DJR01030_rsc.jpg" style="display: block; margin: auto 0 auto auto;" /></p>
+<p><img src="images/DJR01030_rsc.jpg" width="200%" style="display: block; margin: auto 0 auto auto;" /></p>
 </div>
 <p>
  
 </p>
-<p>Hello! I am a Senior Research Fellow in <a href="https://www.bcu.ac.uk/social-sciences/about-us/staff/psychology">Psychology</a>, at <a href="https://www.bcu.ac.uk/">Birmingham City University</a>. My background is in experimental psychology and memory although my research interests now cover a very broad range of behavioural science topics.</p>
+<p>Hello! I am a Lecturer in Psychology, at the <a href="https://le.ac.uk">University of Leicester</a>. My background is in experimental psychology and memory although my research interests now cover a very broad range of behavioural science topics.</p>
 <p>Many of my current interests lie at the intersection between well-being, health, socioeconomic inequality and social psychology. I am particularly interested in thinking about new ways in which behavioural science can contribute to academic study of inequality and social issues.</p>
-<p>But that’s not all I’m up to - I spend a lot of time thinking about how to both teach and apply ethics and open science principles. Do have a look around to see more, check out research activities and pre-registrations at <a href="https://osf.io/gmz9h">osf.io/gmz9h</a> or get in touch with me directly at emma[dot]bridger[at]bcu[dot]ac[dot]uk.</p>
+<p>But that’s not all I’m up to - I spend a lot of time thinking about how to both teach and apply ethics and open science principles. Do have a look around to see more, check out research activities and pre-registrations at <a href="https://osf.io/gmz9h">osf.io/gmz9h</a> or get in touch with me directly at eb441[dot][at]leicester[dot]ac[dot]uk.</p>
 <p>
  
 </p>
