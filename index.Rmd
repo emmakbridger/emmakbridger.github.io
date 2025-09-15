@@ -12,7 +12,7 @@ knitr::include_graphics("images/DJR01030_rsc.jpg")
 
 Hello! I am a Lecturer in Psychology, at the [University of Leicester](https://le.ac.uk). My background is in experimental psychology and memory although my research interests now cover a very broad range of behavioural science topics. 
 
-Many of my current interests lie at the intersection between well-being, health, socioeconomic inequality and social psychology. I am particularly interested in thinking about new ways in which behavioural science can contribute to academic study of inequality and social issues. 
+Many of my current interests lie at the intersection between well-being, health, socioeconomic inequality and social psychology. 
 
 But that's not all I'm up to - I spend a lot of time thinking about how to both teach and apply ethics and open science principles. Do have a look around to see more, check out research activities and pre-registrations at [osf.io/gmz9h](https://osf.io/gmz9h) or get in touch with me directly at eb441[dot][at]leicester[dot]ac[dot]uk.
 
