@@ -9,12 +9,11 @@ knitr::include_graphics("images/DJR01030_rsc.jpg")
 
 <p>&nbsp;</p>
 
+Hello! I am a Lecturer in Psychology, at the [University of Leicester](https://le.ac.uk). I am interested in how behavioural science and psychology can meaningfully address socioeconomic health inequalities and social determinants of health. This requires a focus not only on how socio-ecologies impact our daily realities, well-being, behaviour and psychological appraisals, but also studying beliefs about wider structural and political systems that give rise to them and how people think these systems can and should be influenced.
 
-Hello! I am a Lecturer in Psychology, at the [University of Leicester](https://le.ac.uk). My background is in experimental psychology and memory although my research interests now cover a very broad range of behavioural science topics. 
+In the recent past, I spent a lot of time thinking about how to teach and apply ethics and open science principles in UG and PG courses. This work remains important, but increasingly this energy is being spent on how to use social and political psychology insights to overcome the fractured and unsettling times we find ourselves in. If this is something you're working on too, get in touch so we can figure it out together!
 
-Many of my current interests lie at the intersection between well-being, health, socioeconomic inequality and social psychology. 
-
-But that's not all I'm up to - I spend a lot of time thinking about how to both teach and apply ethics and open science principles. Do have a look around to see more, check out research activities and pre-registrations at [osf.io/gmz9h](https://osf.io/gmz9h) or get in touch with me directly at eb441[dot][at]leicester[dot]ac[dot]uk.
+Have a look around to see more, check out research activities and pre-registrations at [osf.io/gmz9h](https://osf.io/gmz9h), follow me on bluesky [at]emkbridger.bsky.social  or get in touch with me directly at eb441[dot][at]leicester[dot]ac[dot]uk.
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
