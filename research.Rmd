@@ -7,7 +7,7 @@ Some of my current research projects include:
 
 *Perceived Causal Relations of Determinants of Health: Adapting Network Analytic Approaches* 
 
-This present project is funded by a British Academy Talent Development Award. The Award employs network analysis - set of statistical techniques that enable analysis and visualisation of relational data - to develop new methods to assess perceived causal relations between the social determinants of health and a range of health outcomes. This is important not only because of the inherent complexity of social determinants of health but because people's causal intuitions often overlook structural determinants of health in favour of biological or lifestyle causes. 
+This present project is funded by a British Academy Talent Development Award. The Award employs network analysis - set of statistical techniques that enable analysis and visualisation of relational data - to develop new methods to assess perceived causal relations between the social determinants of health and a range of health outcomes. This is important not only because of the inherent complexity of social determinants of health but because people's causal intuitions often overlook structural determinants of health in favour of biological or lifestyle causes. I am very grateful to be working on this project with Drs Eiko Fried (Leiden University), John Maltby (University of Leicester), Daniel Nettle (Paris-ENS) and Lars Klintwall (Karolinska Instituet).
 
 *Stressful politics: Understanding politics as a stress factor for mental health* 
 
